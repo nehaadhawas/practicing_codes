@@ -1,0 +1,47 @@
+def start_adventure():
+    print("Welcome to the Adventure Game!")
+    print("You find yourself standing in a dark forest.")
+    print("There are two paths ahead: left or right.")
+    
+    choice = input("Which path do you choose? (left/right): ").lower()
+    
+    if choice == "left":
+        dark_cave()
+    elif choice == "right":
+        enchanted_lake()
+    else:
+        print("Invalid choice. Game over.")
+        return
+
+def dark_cave():
+    print("\nYou walk down the left path and find a dark cave.")
+    print("You hear strange noises coming from inside the cave.")
+    
+    choice = input("Do you want to enter the cave? (yes/no): ").lower()
+    
+    if choice == "yes":
+        print("\nInside the cave, you find a treasure chest filled with gold!")
+        print("Congratulations, you are rich!")
+    elif choice == "no":
+        print("\nYou decide to avoid the cave and head back home safely.")
+        print("You live to adventure another day.")
+    else:
+        print("Invalid choice. Game over.")
+        
+def enchanted_lake():
+    print("\nYou walk down the right path and come across a beautiful enchanted lake.")
+    print("The water is crystal clear, and you see something shining at the bottom.")
+    
+    choice = input("Do you want to swim in the lake? (yes/no): ").lower()
+    
+    if choice == "yes":
+        print("\nAs you swim toward the shiny object, a magical creature emerges from the water!")
+        print("The creature grants you a wish, and you live happily ever after.")
+    elif choice == "no":
+        print("\nYou decide not to disturb the magic of the lake and continue your journey.")
+        print("You eventually find your way home, safe and sound.")
+    else:
+        print("Invalid choice. Game over.")
+
+# Start the adventure game
+start_adventure()
